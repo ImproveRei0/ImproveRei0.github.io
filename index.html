@@ -8,6 +8,21 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
+            /* 添加背景图片 */
+            background-image: url("https://img.picui.cn/free/2025/01/01/67752560c284f.png");
+            /* 设置背景图片大小为覆盖整个 body */
+            background-size: cover;
+            /* 设置背景图片不重复 */
+            background-repeat: no-repeat;
+            /* 确保内容在背景图片之上可见 */
+            color: #333; /* 修改文字颜色，以便在背景上更清晰 */
+            margin: 0; /* 移除默认的 body margin */
+            height: 100vh; /* 使 body 占据整个视口高度 */
+            display: flex; /* 使用 flexbox 布局 */
+            flex-direction: column; /* 垂直方向布局 */
+            justify-content: center; /* 垂直方向居中 */
+            align-items: center; /* 水平方向居中 */
+
         }
         h1 {
             color: #f00;
@@ -15,13 +30,33 @@
         ul {
             list-style: none;
             padding: 0;
+            background-color: rgba(255, 255, 255, 0.7); /* 添加半透明白色背景 */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 添加阴影 */
         }
         li {
             margin: 10px 0;
         }
+        /* 为链接添加样式 */
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.7); /* 添加半透明白色背景 */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+            max-width: 600px; /* 设置最大宽度 */
+        }
     </style>
 </head>
 <body>
+    <div class="container">
     <h1>服务器故障公告</h1>
     <p>公告</p>
     <p>由于服务器出现故障，目前所有服务均受到影响。我们正在紧急修复中，预计在10天内恢复正常。</p>
@@ -35,8 +70,9 @@
         <li>图书馆</li>
         <li>Jima的个人主页</li>
         <li>JimaNAV</li>
-        </ul>
+    </ul>
     <p>请关注我们的最新公告，我们将实时更新修复进度。</p>
     <p>您可以访问 <a href="https://status.rei1.top">status.rei1.top</a> 获取实时状态。</p>
+    </div>
 </body>
 </html>
